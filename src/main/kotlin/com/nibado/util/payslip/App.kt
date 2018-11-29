@@ -8,7 +8,7 @@ import java.util.*
 fun main(args: Array<String>) {
     val config = getConfig(args)
 
-    println("Loggin in as ${config.username} / ${"*".repeat(config.password.length)}")
+    println("Logging in as ${config.username} / ${"*".repeat(config.password.length)}")
     println("Saving files to ${File(config.dir).absolutePath}")
 
     val token = PayslipUtil.login(config.username, config.password)
